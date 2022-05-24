@@ -5389,6 +5389,11 @@ escodegen@^2.0.0:
   optionalDependencies:
     source-map "~0.6.1"
 
+eslint-config-acme@*:
+  version "1.3.0"
+  resolved "https://mirrors.huaweicloud.com/repository/npm/eslint-config-acme/-/eslint-config-acme-1.3.0.tgz#fec0af7618221b3963eb0ce7520ce8f72bdd310a"
+  integrity sha512-8SVTxViXXCi5LvEqNAtdc8qsfjq3OKMMV8ttkz6iE0d8S1dSqzDluU8AgFqY01JpcUeAHN6R1dyqxerx4LIPmA==
+
 eslint-config-next@^12.0.8:
   version "12.1.6"
   resolved "https://mirrors.huaweicloud.com/repository/npm/eslint-config-next/-/eslint-config-next-12.1.6.tgz#55097028982dce49159d8753000be3916ac55254"
