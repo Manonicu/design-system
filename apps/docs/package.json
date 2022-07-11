@@ -1,30 +1,27 @@
 {
-  "name": "manon-docs",
-  "version": "0.0.0",
+  "name": "docs",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "start-storybook -p 6006",
-    "build": "build-storybook --docs",
-    "preview-storybook": "serve storybook-static",
-    "clean": "rm -rf .turbo && rm -rf node_modules"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
-    "manon-core": "*",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "@manon/eslint-config": "workspace:^1.0.0",
+    "@manon/ui": "workspace:^0.0.0",
+    "@manon/utils": "workspace:^0.0.0",
+    "next": "12.2.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "manon-tsconfig": "*",
-    "@storybook/addon-actions": "^6.4.18",
-    "@storybook/addon-docs": "^6.4.22",
-    "@storybook/addon-essentials": "^6.4.18",
-    "@storybook/addon-links": "^6.4.18",
-    "@storybook/builder-vite": "^0.1.33",
-    "@storybook/react": "^6.4.18",
-    "@vitejs/plugin-react": "^1.3.2",
-    "eslint-preset-acme": "*",
-    "serve": "^13.0.2",
-    "typescript": "^4.5.4",
-    "vite": "^2.9.9"
+    "@types/node": "18.0.3",
+    "@types/react": "18.0.15",
+    "@types/react-dom": "18.0.6",
+    "eslint": "8.19.0",
+    "eslint-config-next": "12.2.1",
+    "typescript": "4.7.4"
   }
 }

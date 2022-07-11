@@ -1,0 +1,17 @@
+.demo-block {
+  padding: 16px 0;
+  font-size: 16px;
+  &__title {
+    padding: 0 16px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  &__content {
+    padding: 16px;
+    background-color: #fff;
+    .pp-header {
+      position: relative;
+    }
+  }
+}

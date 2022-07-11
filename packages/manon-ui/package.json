@@ -1,0 +1,59 @@
+{
+  "name": "@manon/ui",
+  "version": "0.0.0",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/index.d.ts",
+  "license": "MIT",
+  "files": [
+    "dist",
+    "package.json",
+    "README.md"
+  ],
+  "scripts": {
+    "prebuild": "rm -rf dist",
+    "build": "npm run prebuild && rollup -c",
+    "dev": "rollup -c -w",
+    "lint": "TIMING=1 eslint src/**/*.ts* --fix",
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.6",
+    "@manon/eslint-config": "workspace:^1.0.0",
+    "@react-spring/web": "^9.4.5",
+    "@rollup/plugin-commonjs": "^21.0.1",
+    "@rollup/plugin-node-resolve": "^13.1.3",
+    "@rollup/plugin-typescript": "^8.3.0",
+    "@types/node": "^17.0.45",
+    "@types/react": "^18.0.14",
+    "@types/react-dom": "^18.0.5",
+    "cssnano": "^5.1.12",
+    "eslint": "^8.15.0",
+    "postcss": "^8.4.14",
+    "react": "^18.1.0",
+    "rollup": "^2.67.0",
+    "rollup-plugin-dts": "^4.1.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-typescript2": "^0.32.1",
+    "sass": "^1.53.0",
+    "tslib": "^2.4.0",
+    "typescript": "^4.5.5"
+  },
+  "dependencies": {
+    "@manon/utils": "workspace:*",
+    "@use-gesture/react": "^10.2.15",
+    "autoprefixer": "^10.4.7",
+    "classnames": "^2.3.1",
+    "dayjs": "^1.11.3",
+    "rc-field-form": "^1.26.7"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-dom": "*"
+  },
+  "browserslist": [
+    "> 1%"
+  ]
+}

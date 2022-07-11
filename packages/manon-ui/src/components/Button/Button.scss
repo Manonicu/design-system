@@ -1,0 +1,121 @@
+.pp-btn {
+	position: relative;
+	display: inline-block;
+	padding: 0.12rem 0.16rem;
+	font-weight: 400;
+	white-space: nowrap;
+	background: none;
+	border: 0 none;
+	border-radius: 0.12rem;
+	appearance: none;
+	&__content {
+		position: relative;
+		color: inherit;
+		font-size: inherit;
+		line-height: inherit;
+	}
+	&__label {
+		color: inherit;
+		font-size: inherit;
+		line-height: inherit;
+	}
+	// &-type {
+	&--default {
+		color: var(--pp-color-primary);
+		&::before {
+			position: absolute;
+			top: -50%;
+			right: -50%;
+			bottom: -50%;
+			// left: 0;
+			// top: 0;
+			// width: 200%;
+			// height: 200%;
+			left: -50%;
+			z-index: 0;
+			border: 1px solid currentColor;
+			border-radius: 0.24rem;
+			// transform-origin: 0 0;
+			transform: scale(0.5);
+			content: '';
+		}
+		// &.pp-btn--disabled {
+		// 	color: #e3cff4;
+		// }
+	}
+	&--primary {
+		color: #fff;
+		background-color: var(--pp-color-primary);;
+		// &.pp-btn--disabled {
+		// 	background-color: #e3cff4;
+		// }
+	}
+	&--secondary {
+		color: var(--pp-color-primary);
+		background-color: var(--pp-color-secondary);
+		// &.pp-btn--disabled {
+		// 	background-color: #e3cff4;
+		// }
+	}
+	&--link {
+		color: var(--pp-color-primary);
+	}
+  &--disabled {
+    opacity: 0.3;
+  }
+	// }
+	// &-size {
+	&--mini {
+		padding-top: 0.05rem;
+		padding-bottom: 0.05rem;
+		font-size: 0.12rem;
+		line-height: 0.14rem;
+		border-radius: 0.08rem;
+		&::before {
+			border-radius: 0.16rem;
+		}
+	}
+	&--small {
+		padding-top: 0.07rem;
+		padding-bottom: 0.07rem;
+		font-size: 0.14rem;
+		line-height: 0.16rem;
+		border-radius: 0.08rem;
+		&::before {
+			border-radius: 0.16rem;
+		}
+	}
+	&--middle {
+		padding-top: 0.09rem;
+		padding-bottom: 0.09rem;
+		font-size: 0.16rem;
+		line-height: 0.2rem;
+		&::before {
+			border-radius: 0.24rem;
+		}
+	}
+	&--large {
+		font-size: 0.16rem;
+		line-height: 0.2rem;
+		&::before {
+			border-radius: 0.24rem;
+		}
+	}
+	// }
+	// &-shape {
+	&--round {
+		border-radius: 0.22rem;
+		&::before {
+			border-radius: 0.44rem;
+		}
+	}
+	&--circle {
+		border-radius: 50%;
+	}
+	// }
+	&--block {
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
+}
