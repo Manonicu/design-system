@@ -1,13 +1,6 @@
-/**
- * @ Author: Spencer Xiong
- * @ Create Time: 2022-03-28 17:25:17
- * @ Modified by: Spencer Xiong
- * @ Modified time: 2022-03-30 16:04:40
- * @ Description:
- */
 
-import React from 'react'
 import classNames from 'classnames'
+import React from 'react'
 
 import './Button.scss'
 
